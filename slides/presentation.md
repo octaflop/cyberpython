@@ -5,13 +5,21 @@ theme: gaia
 paginate: true
 ---
 
+# Cybersecurity with Python Tools
+
+- [octaflop/cyberpython](https://github.com/octaflop/cyberpython)
+- ![](./cyberpython_github_repo_qr.png) 
+
+---
+
+
 # Introduction 🔰
 
 <!-- eta: 3min -->
 
 - Importance of cybersecurity
 - Why Python is popular for cybersecurity
-- *Joke:* "Why did the hacker cross the road? Because that's where the security was weakest!"
+<!-- joke: "Why did the hacker cross the road? Because that's where the security was weakest!" -->
 
 ---
 
@@ -20,9 +28,11 @@ paginate: true
 
 <!-- eta: 5min -->
 
-- Key Python libraries: `requests`, `socket`, `scapy`
+- Key Python libraries: `requests`, `socket`, `scrapy`, `cryptography`
 - Setting up a Python environment
-- *Tip:* "Think of virtual environments as your personal cybersecurity lab coats."
+- `python3.12 -m venv venv && source venv/bin/activate`
+- 
+<!-- tip: "Think of virtual environments as your personal cybersecurity lab coats." -->
 
 ---
 
@@ -56,7 +66,6 @@ scan_ports('127.0.0.1')
 - Use scapy to capture and analyze network packets.
 - Reference: [GitHub repository](https://github.com/hposton/python-for-cybersecurity/blob/840769d04d2228803fd7493cdaf52c348b5db775/Part_8/8.2_Network_Sniffing/NetworkCredentialSniffing.py#L4) for Python cybersecurity scripts
 
-
 ---
 
 
@@ -71,7 +80,7 @@ scan_ports('127.0.0.1')
 ---
 
 
-# Cryptography in Python
+# Cryptography in Python 🔐
 
 <!-- eta: 8min -->
 
@@ -95,9 +104,11 @@ print(encrypt_message(key, message))
 
 ---
 
-# Demo
+# Demo 🎡
 
 <!-- eta: 14min -->
+
+## Encrypting and decrypting with python
 
 ```python
 import hashlib
@@ -157,14 +168,15 @@ if __name__ == "__main__":
 
 ## Long-Form Resources for Further Learning
 
-- Black Hat Python
-- Violent Python
+- [Black Hat Python](https://nostarch.com/black-hat-python2E) 💰
+- [Violent Python](https://github.com/tanc7/hacking-books/blob/master/Violent%20Python%20-%20A%20Cookbook%20for%20Hackers,%20Forensic%20Analysts,%20Penetration%20Testers%20and%20Security%20Engineers.pdf) 📖
+
 
 ---
 
 ## GitHub repositories for further exploration
 
-- https://github.com/PeterMosmans/security-scripts
+- [PeterMosmans/security-scripts](https://github.com/PeterMosmans/security-scripts)
 
 
 <!-- Joke: "Remember, in cybersecurity, the only thing more important than Python is coffee!" -->
@@ -173,3 +185,6 @@ if __name__ == "__main__":
 
 ## This Repo:
 
+
+- [octaflop/cyberpython](https://github.com/octaflop/cyberpython)
+- ![](./cyberpython_github_repo_qr.png)
