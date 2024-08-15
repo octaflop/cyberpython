@@ -104,7 +104,7 @@ print(encrypt_message(key, message))
 
 ---
 
-# Demo 🎡 
+# Demo 🎡
 
 <!-- eta: 14min -->
 

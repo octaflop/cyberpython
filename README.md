@@ -1,15 +1,22 @@
-Get started:
+# Get started:
 
+After cloning, and with python 3.12 installed, run this
 
 ```bash
-npx @marp-team/marp-cli@latest -w demo.md
+python3.12 -m venv venv &&
+source venv/bin/activate &&
+pip install -r requirements.txt &&
+jupyter lab
 ```
 
-to build and watch. 
+You should be presented with a jupyter lab.
 
-Then to view on a server, use:
+Open `slides/presentation.md` by right-clicking and selecting `Open with > Marp Preview`.
 
-`npx @marp-team/marp-cli@latest -s ./`
+## Demos
 
-Then open `http://localhost:8080`
+- `cryptography.py` is a basic encryption demo
 
+## Tools
+
+- `qrslide.py` is used to generate a QR code for the presentation url.
