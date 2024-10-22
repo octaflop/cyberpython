@@ -1,8 +1,30 @@
 import qrcode
+import qrcode.image.svg
+import os
 
-data = "https://github.com/octaflop/cyberpython"
+def generate_qr_code(text, filepath="qrcode.svg"):
+    # Generate QR code
+    qr = qrcode.QRCode(version=1, box_size=10, border=5)
+    qr.add_data(text)
+    qr.make(fit=True)
 
-img = qrcode.make(data)
+    # Create an SVG image
+    factory = qrcode.image.svg.SvgPathImage
+    img = qr.make_image(fill_color="black", back_color="white", image_factory=factory)
 
-img.save("cyberpython_github_repo_qr.png")
+    # Ensure the filepath has .svg extension
+    if not filepath.lower().endswith('.svg'):
+        filepath += '.svg'
 
+    # Save the image
+    img.save(filepath)
+
+    # Get the absolute filepath
+    absolute_filepath = os.path.abspath(filepath)
+
+    return absolute_filepath
+
+# Example usage
+# text_to_encode = "https://example.com"
+# result_filepath = generate_qr_code(text_to_encode)
+# print(f"QR code saved at: {result_filepath}")
